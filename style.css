@@ -12,6 +12,19 @@ p {
   color: #111;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 1000px;
+}
+
+/*Banner*/
 .banner {
   position: relative;
   width: 100%;
@@ -46,11 +59,48 @@ p {
   padding: 10px 30px;
   margin-top: 20px;
   text-transform: uppercase;
-  text-decoration: none;
   letter-spacing: 2px;
   transition: 0.5s;
 }
 
 .btn:hover {
   letter-spacing: 6px;
+}
+
+/*Header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+header .logo span {
+  color: #ff0157;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li + li {
+  margin-left: 30px;
+}
+
+header .navigation li a {
+  color: #fff;
+  font-weight: 300;
 }
