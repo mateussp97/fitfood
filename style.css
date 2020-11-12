@@ -413,7 +413,126 @@ section {
 }
 
 @media (max-width: 991px) {
-  header {
+  /*Setting padding of header tag*/
+  header,
+  header.sticky {
     padding: 10px 20px;
+  }
+
+  /*Setting navigation class*/
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    width: 100%;
+    height: calc(100% - 67px);
+    position: fixed;
+    top: 67px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  header .navigation li + li {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  header .navigation li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 300;
+  }
+
+  /*Setting menuToggle class*/
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(./img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menuToggle.active {
+    background: url(./img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  header.sticky .menuToggle {
+    filter: invert(); /*Function inverts the color samples in the input image*/
+  }
+
+  /*Setting padding of section tag*/
+  section {
+    padding: 20px;
+  }
+
+  /*Setting font-size*/
+  .banner .content h2 {
+    font-size: 3em;
+  }
+
+  /*Setting default classes*/
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col50 {
+    position: relative;
+    width: 100%;
+  }
+
+  .row .col50 .imgBx {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  /*Menu*/
+  .menu .content {
+    margin-top: 20px;
+  }
+
+  .menu .content .box {
+    margin: 10px;
+  }
+
+  .menu .content .box .imgBx {
+    height: 260px;
+  }
+
+  /*Title*/
+  .title-text {
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  /*Testimonials*/
+  .testimonials .content .box {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  /*Contact*/
+  .contact-form {
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  #contact {
+    padding: 100px 20px;
   }
 }
