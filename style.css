@@ -20,10 +20,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  min-height: 1000px;
-}
-
 /*Banner*/
 .banner {
   position: relative;
@@ -81,6 +77,21 @@ header {
   transition: 0.5s;
 }
 
+/*Header with sticky class*/
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header.sticky .navigation li a {
+  color: #111;
+}
+
 header .logo {
   color: #fff;
   font-weight: 700;
@@ -103,4 +114,9 @@ header .navigation li + li {
 header .navigation li a {
   color: #fff;
   font-weight: 300;
+  transition: 0.3s;
+}
+
+header .navigation li a:hover {
+  color: #ff0157;
 }
