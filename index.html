@@ -1,249 +1,311 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitFood</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FitFood</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
+  <body>
+    <header>
+      <a href="#" class="logo">Fit<span>Food</span></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#experts" onclick="toggleMenu();">Experts</a></li>
+        <li>
+          <a href="#testimonials" onclick="toggleMenu();">Testimonials</a>
+        </li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
 
-<body>
-  <header>
-    <a href="#" class="logo">Fit<span>Food</span></a>
-    <div class="menuToggle" onclick="toggleMenu();"></div>
-    <ul class="navigation">
-      <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-      <li><a href="#about" onclick="toggleMenu();">About</a></li>
-      <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
-      <li><a href="#experts" onclick="toggleMenu();">Experts</a></li>
-      <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
-      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-    </ul>
-  </header>
+    <section class="banner" id="banner">
+      <div class="content" data-aos="fade-down" data-aos-duration="2000">
+        <h2>Joining food, pleasure and health!</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a href="#menu" class="btn">Our Menu</a>
+      </div>
+    </section>
 
-  <section class="banner" id="banner">
-    <div class="content" data-aos="fade-down" data-aos-duration="2000">
-      <h2>Joining food, pleasure and health!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="#menu" class="btn">Our Menu</a>
-    </div>
-  </section>
+    <section class="about" id="about">
+      <div class="row">
+        <div
+          class="col50"
+          data-aos="fade-down"
+          data-aos-delay="70"
+          data-aos-duration="2000"
+        >
+          <h2 class="title-text"><span>A</span>bout Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit ut
+            tortor pretium viverra. Duis ultricies lacus sed turpis tincidunt id
+            aliquet. Volutpat commodo sed egestas egestas fringilla phasellus
+            faucibus scelerisque.<br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem
+            viverra aliquet eget sit amet tellus cras adipiscing. Orci a
+            scelerisque purus semper eget duis at tellus. Quam elementum
+            pulvinar etiam non quam lacus. Suscipit tellus mauris a diam
+            maecenas sed enim ut. Faucibus scelerisque eleifend donec pretium.
+          </p>
+        </div>
 
-  <section class="about" id="about">
-    <div class="row">
-      <div class="col50" data-aos="fade-down" data-aos-delay="70" data-aos-duration="2000">
-        <h2 class="title-text"><span>A</span>bout Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit ut tortor pretium viverra. Duis ultricies lacus sed turpis tincidunt id aliquet. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque.<br><br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem viverra aliquet eget sit amet tellus cras adipiscing. Orci a scelerisque purus semper eget duis at tellus. Quam elementum pulvinar etiam non quam lacus. Suscipit tellus mauris a diam maecenas sed enim ut. Faucibus scelerisque eleifend donec pretium.
+        <div
+          class="col50"
+          data-aos="fade-left"
+          data-aos-delay="70"
+          data-aos-duration="2000"
+        >
+          <div class="imgBx">
+            <img src="./img/img-about.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div
+        class="title"
+        class="title"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
+        <h2 class="title-text">Our <span>M</span>enu</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
 
-      <div class="col50" data-aos="fade-left" data-aos-delay="70" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/img-about.png" alt="">
+      <div class="content">
+        <div class="box" data-aos="fade-left" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/dish1.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Poutine, Canadá</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-down" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/dish2.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Mole Poblano, México</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-right" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/dish3.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Pot-au-feu, França</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-left" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/dish4.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Tom Yum, Tailândia</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/dish5.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Irish Stew, Irlanda</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-right" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/dish6.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Goulash, Hungria</h3>
+          </div>
         </div>
       </div>
+
+      <div class="title">
+        <a href="#" class="btn">View All</a>
+      </div>
+    </section>
+
+    <section class="experts" id="experts">
+      <div
+        class="title"
+        class="title"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
+        <h2 class="title-text">Our Kitchen <span>E</span>xperts</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="content">
+        <div class="box" data-aos="zoom-in-right" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/experts1.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Alex Atala</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-down" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/experts2.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Gordon Ramsay</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/experts3.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Helena Rizzo</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="zoom-out-left" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/experts4.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Jamie Oliver</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div
+        class="title white"
+        class="title"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
+        <h2 class="title-text">They <span>S</span>aid About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="content">
+        <div class="box" data-aos="flip-right" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/testi1.png" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Est
+              lorem ipsum dolor sit.
+            </p>
+            <h3>Olivia Burns</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="flip-down" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/testi2.png" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Est
+              lorem ipsum dolor sit.
+            </p>
+            <h3>Ricky Davis</h3>
+          </div>
+        </div>
+
+        <div class="box" data-aos="flip-left" data-aos-duration="2000">
+          <div class="imgBx">
+            <img src="./img/testi3.png" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Est
+              lorem ipsum dolor sit.
+            </p>
+            <h3>Josh Gordon</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="title" data-aos="fade-down" data-aos-duration="2000">
+        <h2 class="title-text"><span>C</span>ontact Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="contact-form" data-aos="fade-right" data-aos-duration="2000">
+        <h3>Send Message</h3>
+        <div class="input-box">
+          <input type="text" placeholder="Name" />
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="E-mail" />
+        </div>
+
+        <div class="input-box">
+          <textarea placeholder="Message"></textarea>
+        </div>
+
+        <div class="input-box">
+          <input type="submit" value="Send" />
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright-text">
+      <p>
+        Copyright 2020 -
+        <a target="_blank" href="https://mateuspaula.dev/">Mateus de Souza</a>.
+        All Right Reserved
+      </p>
     </div>
-  </section>
 
-  <section class="menu" id="menu">
-    <div class="title" class="title" data-aos="fade-down" data-aos-duration="2000">
-      <h2 class="title-text">Our <span>M</span>enu</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
 
-    <div class="content">
-      <div class="box" data-aos="fade-left" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/dish1.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Poutine, Canadá</h3>
-        </div>
-      </div>
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle");
+        const navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
 
-      <div class="box" data-aos="fade-down" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/dish2.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Mole Poblano, México</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="fade-right" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/dish3.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Pot-au-feu, França</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="fade-left" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/dish4.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Tom Yum, Tailândia</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="fade-up" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/dish5.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Irish Stew, Irlanda</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="fade-right" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/dish6.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Goulash, Hungria</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="title">
-      <a href="#" class="btn">View All</a>
-    </div>
-  </section>
-
-  <section class="experts" id="experts">
-    <div class="title" class="title" data-aos="fade-down" data-aos-duration="2000">
-      <h2 class="title-text">Our Kitchen <span>E</span>xperts</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <div class="content">
-      <div class="box" data-aos="zoom-in-right" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/experts1.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Alex Atala</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="zoom-in-down" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/experts2.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Gordon Ramsay</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="zoom-in-up" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/experts3.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Helena Rizzo</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="zoom-out-left" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/experts4.png" alt="">
-        </div>
-        <div class="text">
-          <h3>Jamie Oliver</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials" id="testimonials">
-    <div class="title white" class="title" data-aos="fade-down" data-aos-duration="2000">
-      <h2 class="title-text">They <span>S</span>aid About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="content">
-      <div class="box" data-aos="flip-right" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/testi1.png" alt="">
-        </div>
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit.</p>
-          <h3>Olivia Burns</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="flip-down" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/testi2.png" alt="">
-        </div>
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit.</p>
-          <h3>Ricky Davis</h3>
-        </div>
-      </div>
-
-      <div class="box" data-aos="flip-left" data-aos-duration="2000">
-        <div class="imgBx">
-          <img src="./img/testi3.png" alt="">
-        </div>
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit.</p>
-          <h3>Josh Gordon</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="title" data-aos="fade-down" data-aos-duration="2000">
-      <h2 class="title-text"><span>C</span>ontact Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="contact-form" data-aos="fade-right" data-aos-duration="2000">
-      <h3>Send Message</h3>
-      <div class="input-box">
-        <input type="text" placeholder="Name">
-      </div>
-
-      <div class="input-box">
-        <input type="text" placeholder="E-mail">
-      </div>
-
-      <div class="input-box">
-        <textarea placeholder="Message"></textarea>
-      </div>
-
-      <div class="input-box">
-        <input type="submit" value="Send">
-      </div>
-    </div>
-  </section>
-
-  <div class="copyright-text">
-    <p>Copyright 2020 - <a target="_blank" href="https://mateuspaula.dev/">Mateus de Souza</a>. All Right Reserved</p>
-  </div>
-
-
-  <script type="text/javascript">
-    window.addEventListener('scroll', function () {
-      const header = document.querySelector('header');
-      header.classList.toggle("sticky", window.scrollY > 0);
-    });
-
-    function toggleMenu() {
-      const menuToggle = document.querySelector('.menuToggle');
-      const navigation = document.querySelector('.navigation');
-      menuToggle.classList.toggle('active');
-      navigation.classList.toggle('active');
-    }
-
-    AOS.init();
-  </script>
-</body>
-
+      AOS.init();
+    </script>
+  </body>
 </html>
