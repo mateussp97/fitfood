@@ -25,9 +25,9 @@ img {
   display: block;
 }
 
-/*Banner*/
+/* Banner Section*/
 .banner {
-  /*Setting image parameters*/
+  /* Setting image parameters */
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -70,7 +70,7 @@ img {
   letter-spacing: 6px;
 }
 
-/*Header*/
+/* Header Section */
 header {
   position: fixed;
   top: 0;
@@ -84,7 +84,7 @@ header {
   transition: 0.5s;
 }
 
-/*Header with sticky class*/
+/* Header with sticky class */
 header.sticky {
   background: #fff;
   padding: 10px 100px;
@@ -100,6 +100,7 @@ header.sticky .navigation li a {
 }
 
 header .logo {
+  display: flex;
   color: #fff;
   font-weight: 700;
   font-size: 2em;
@@ -128,7 +129,7 @@ header .navigation li a:hover {
   color: #00b311;
 }
 
-/*About and fixed params*/
+/* About Section and fixed params */
 section {
   padding: 100px;
 }
@@ -158,15 +159,15 @@ section {
 }
 
 .row .col50 .imgBx {
-  /*Setting div image parameters*/
+  /* Setting div image parameters */
   position: relative;
   width: 100%;
-  /*min-height: 300%;*/
+  /* min-height: 300%; */
   height: 100%;
 }
 
 .row .col50 .imgBx img {
-  /*Setting image parameters*/
+  /* Setting image parameters */
   position: absolute;
   top: 0;
   left: 0;
@@ -176,7 +177,7 @@ section {
   border-radius: 8px;
 }
 
-/*Menu*/
+/* Menu Section */
 .title {
   width: 100%;
   display: flex;
@@ -206,14 +207,14 @@ section {
 }
 
 .menu .content .box .imgBx {
-  /*Setting div image parameters*/
+  /* Setting div image parameters */
   position: relative;
   width: 100%;
   height: 300px;
 }
 
 .menu .content .box .imgBx img {
-  /*Setting image parameters*/
+  /* Setting image parameters */
   position: absolute;
   top: 0;
   left: 0;
@@ -232,7 +233,7 @@ section {
   color: #111;
 }
 
-/*Experts*/
+/* Experts Section */
 .experts .content {
   display: flex;
   justify-content: center;
@@ -247,14 +248,14 @@ section {
 }
 
 .experts .content .box .imgBx {
-  /*Setting div image parameters*/
+  /* Setting div image parameters */
   position: relative;
   width: 100%;
   height: 300px;
 }
 
 .experts .content .box .imgBx img {
-  /*Setting image parameters*/
+  /* Setting image parameters */
   position: absolute;
   top: 0;
   left: 0;
@@ -273,7 +274,7 @@ section {
   color: #111;
 }
 
-/*Testimonials*/
+/* Testimonials Section */
 .testimonials {
   background: url(./img/bg-testimonials.png);
   background-size: cover;
@@ -305,7 +306,7 @@ section {
 }
 
 .testimonials .content .box .imgBx {
-  /*Setting div image parameters*/
+  /* Setting div image parameters */
   position: relative;
   width: 80px;
   height: 80px;
@@ -315,7 +316,7 @@ section {
 }
 
 .testimonials .content .box .imgBx img {
-  /*Setting image parameters*/
+  /* Setting image parameters */
   position: absolute;
   top: 0;
   left: 0;
@@ -341,7 +342,7 @@ section {
   font-weight: 600;
 }
 
-/*Contact*/
+/* Contact Section */
 .contact {
   background: url(./img/bg-contact.png);
   background-size: cover;
@@ -402,7 +403,7 @@ section {
   letter-spacing: 6px;
 }
 
-/*Copyright*/
+/* Copyright Section */
 .copyright-text {
   padding: 10px 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -419,13 +420,13 @@ section {
 }
 
 @media (max-width: 991px) {
-  /*Setting padding of header tag*/
+  /* Setting padding of header tag */
   header,
   header.sticky {
     padding: 10px 20px;
   }
 
-  /*Setting navigation class*/
+  /* Setting navigation class */
   header .navigation {
     display: none;
   }
@@ -455,7 +456,7 @@ section {
     font-weight: 300;
   }
 
-  /*Setting menuToggle class*/
+  /* Setting menuToggle class */
   .menuToggle {
     position: relative;
     width: 40px;
@@ -476,20 +477,22 @@ section {
   }
 
   header.sticky .menuToggle {
-    filter: invert(); /*Function inverts the color samples in the input image*/
+    filter: invert(
+
+    ); /* Function inverts the color samples in the input image */
   }
 
-  /*Setting padding of section tag*/
+  /* Setting padding of section tag */
   section {
     padding: 20px;
   }
 
-  /*Setting font-size*/
+  /* Setting font-size */
   .banner .content h2 {
     font-size: 2em;
   }
 
-  /*Setting default classes*/
+  /* Setting default classes */
   .row {
     flex-direction: column;
   }
@@ -504,7 +507,7 @@ section {
     margin-top: 20px;
   }
 
-  /*Menu*/
+  /* Menu Section */
   .menu .content {
     margin-top: 20px;
   }
@@ -517,7 +520,7 @@ section {
     height: 260px;
   }
 
-  /*Title*/
+  /* Title Section */
   .title-text {
     text-align: center;
     line-height: 1.5em;
@@ -525,13 +528,13 @@ section {
     margin-top: 50px;
   }
 
-  /*Testimonials*/
+  /* Testimonials Section */
   .testimonials .content .box {
     margin: 10px;
     padding: 20px;
   }
 
-  /*Contact*/
+  /* Contact Section */
   .contact-form {
     padding: 35px 40px;
     margin-top: 20px;
