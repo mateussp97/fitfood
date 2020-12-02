@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins";
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p {
@@ -117,6 +118,7 @@ header .navigation {
 
 header .navigation li + li {
   margin-left: 30px;
+  margin-top: 1.5rem;
 }
 
 header .navigation li a {
