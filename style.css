@@ -118,7 +118,6 @@ header .navigation {
 
 header .navigation li + li {
   margin-left: 30px;
-  margin-top: 1.5rem;
 }
 
 header .navigation li a {
@@ -449,6 +448,7 @@ section {
   header .navigation li + li {
     list-style: none;
     margin-left: 0;
+    margin-top: 1.5rem;
   }
 
   header .navigation li a {
